@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Boilerplate</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<style>
+		/*Custom CSS here*/
+	</style>
+</head>
+<body>
+	<!-- Any HTML Goes Here -->
+
+	<button id="theButton">click mee</button>
+		
+	<!-- Any HTML Ends Here -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+
+
+    	// Custom Javascript Here
+    	
+
+    	//-------------------------------------------------------------------
+    	//this is in the global scope
+    	// var myVariable = 'hey hi hello yo wassup';
+
+    	//hoisting their function to be invoked 
+    	//shoutIt();
+
+    	//This is a function declaration
+    	//	function shoutIt () {
+    	//	alert(myVariable);
+    	//	var localVariable = 'this is a local message'
+    	//	window.localVariable = localVariable;
+    	//};
+
+    	//Invoking the function declaration 
+    	//	shoutIt();
+
+    	//a function expression 
+    	//	var newShoutIt = function (){
+    	//		alert(myVariable);
+    	// }();
+
+    	// newShoutIt();
+    		
+    	// Function Scope local and global 
+
+
+    	// ------------------------------------------------------------------
+
+
+    	var initDom = function(){
+    		var trigger = document.getElementById('theButton');
+    		trigger.addEventListener('click', dateFunction);
+    		setTimeout(function(){ doThis() }, 2000);
+    	}();
+
+    	function dateFunction(){
+    		var d = new Date();
+    		var n = d.getFullYear();
+
+    		
+
+    	function dothis (){
+    		var d = new Date();
+    		var n = d.getFullYear();
+
+    			alert(n);
+			
+			}
+    	};
+
+    	
+    	
+
+
+
+
+
+
+
+
+
+
+
+
+    		  	
+
+
+    </script>
+</body>
+</html>
